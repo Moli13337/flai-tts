@@ -1,5 +1,7 @@
 # 蝴蝶体育朗读
 
+[ref](https://github.com/Moli13337/flai-key)
+
 FLAI（Flutter 语音陪聊 App）TTS 协议的第三方小说朗读客户端，Android 14+。
 
 基于对官方 APK 的逆向分析实现：AES-256-CBC 会话加密、RSA token 头、tinyproxy CONNECT 隧道、PCM 16kHz 合成、libmp3lame 本地编码缓存。
