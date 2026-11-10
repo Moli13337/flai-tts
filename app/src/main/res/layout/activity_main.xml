@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <FrameLayout
+        android:id="@+id/pageHost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/pageRead"
+            layout="@layout/page_read" />
+
+        <include
+            android:id="@+id/pageVoice"
+            layout="@layout/page_voice"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/pageSettings"
+            layout="@layout/page_settings"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/card"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/tabRead"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_tab_read"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/primary"
+            android:text="朗读"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tabVoice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_tab_voice"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/tab_inactive"
+            android:text="声音"
+            android:textColor="@color/tab_inactive"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tabSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_tab_settings"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/tab_inactive"
+            android:text="设置"
+            android:textColor="@color/tab_inactive"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
